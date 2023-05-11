@@ -172,6 +172,8 @@ def generate_reply(question, state, eos_token=None, stopping_strings=None):
         question = apply_extensions('input', question)
 
     if shared.args.verbose:
+        print(shared.settings)
+        print(state)
         print(f'\n\n{question}\n--------------------\n')
 
     shared.stop_everything = False
